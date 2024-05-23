@@ -1,0 +1,24 @@
+server:
+    port: 9002
+    servlet:
+        context-path: /api/v1
+spring:
+    application:
+        name: ubeer
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: ${DATABASE_PASSWORD}
+        url: ${DATABASE_URL}
+        username: ${DATABASE_USERNAME}
+    jpa:
+        hibernate:
+            ddl-auto: update
+        open-in-view: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                format_sql: true
+        show-sql: true
+springdoc:
+    api-docs:
+        path: /api-docs
