@@ -9,12 +9,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Utlisateur {
+public class Utilisateur {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column
+    private String auth0Id;
 
     @Column(name = "nom")
     private String nom;

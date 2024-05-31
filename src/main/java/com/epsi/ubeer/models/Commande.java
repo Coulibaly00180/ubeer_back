@@ -26,5 +26,5 @@ public class Commande {
 
     @ManyToOne
     @JoinColumn(name = "id_utilisateur", nullable = false)
-    private Utlisateur utilisateur;
+    private Utilisateur utilisateur;
 }

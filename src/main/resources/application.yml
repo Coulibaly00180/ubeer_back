@@ -2,7 +2,16 @@ server:
     port: 9002
     servlet:
         context-path: /api/v1
+auth0:
+    audience: https://ubeer.com/
+
+
 spring:
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: https://dev-tncqudzn4q1q8npx.us.auth0.com/
     application:
         name: ubeer
     datasource:
